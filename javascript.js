@@ -9,8 +9,15 @@ for (let i=0; i<16 ; i++) {
         const divAdd = document.createElement("div");
         divAdd.classList.add("gridMember");
         rowAdd.appendChild(divAdd);
+        divAdd.addEventListener("mouseenter", (event) =>{
+            console.log("hover");
+            event.target.style.background = "purple";
 
+            // reset the color after a short delay
+            setTimeout(() => {
+            event.target.style.background = "";
+            }, 500);
+        },false);
     }
     containerVar.appendChild(rowAdd);
-
 }

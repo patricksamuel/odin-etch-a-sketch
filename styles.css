@@ -1,11 +1,12 @@
 .gridMember {
-    border: solid 3px red;
-    height: 5px;
-    width: 5px;
+    border: solid 1px red;
+    height: 10px;
+    width: 10px;
 
 }
 
 .container{
+    
     display: flex;
     flex-direction: column;
 }
